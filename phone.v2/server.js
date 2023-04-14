@@ -19,7 +19,9 @@ app.get("/time", function (req, res) {
 app.get("/game", function (req, res) {
     res.sendFile(__dirname + "/game.html");
 });
-
+app.get("/instagram", function (req, res) {
+    res.sendFile(__dirname + "/instagram.html");
+});
 const port = 3002
 server.listen(port, () => {
     console.log('connected');
