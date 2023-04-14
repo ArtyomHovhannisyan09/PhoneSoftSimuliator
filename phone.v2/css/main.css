@@ -1,0 +1,215 @@
+.phone{
+  width: 300px;
+  height: 600px;
+
+  border: 20px solid black;
+  border-radius: 20px;
+display: inline-block;
+background: linear-gradient(aqua, #9198e5);
+}
+
+.cholka--iphone--mem{
+  margin-left: 80px;
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  border-radius: 0px 0px 10px 10px;
+
+}
+#logo--search{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+#search--in--home{
+  width: 170px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top:70px;
+  text-align: start;
+  justify-self: start;
+  padding: 10px 10px;
+}
+
+#search--box{
+  background-color: blue;
+  width: 270px;
+  height: 30px;
+
+  transform: translateZ(1);
+}
+
+.time--box{
+  margin-top: 60px;
+  margin-left:  30px;
+  width: 200px;
+  height: 50px;
+  /* background-color: rgba(208, 175, 175,0.4); */
+  font-size: 60px;
+  display: flex;
+}
+
+.region{
+  font-size: 30px;
+}
+.app-box{
+  width: 200px;
+  height: 200px;
+
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  /* justify-content: center; */
+}
+.app{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(110, 179, 198, 0.9);
+  margin-top: 10px;
+  margin-left: 35px;
+  border-radius: 10px;
+}
+.timer{
+  margin-top:50px;
+}
+#CalculatorIcon{
+  width: 50px;
+  height: 50px;
+}
+#TimeIcon{
+  width: 50px;
+  height:50px;
+}
+.home-button--bar{
+  width: 260px;
+  height: 50px;
+  background-color:black;
+ 
+  display: flex;
+  justify-content: center;
+}
+
+.btnGl{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+.calulator-bar,.time-bar{
+width: 260;
+height:530px;
+background-color: rgb(51, 51, 51);
+}
+.time-bar{
+  
+  background-color: rgb(211, 158, 253);
+}
+#calc{
+  width: 260px;
+  height: 100px;
+  margin-top: 50px;
+  font-size: 40px;
+  text-align: end;
+background-color:rgb(51, 51, 51);
+padding-right: 5px;
+
+
+}
+.calc-btn{
+  width: 65px;
+  height: 65px;
+  margin-top: 5px;
+  margin-left: 2.5px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.listone,.listtwo,.listthree,.listfour,.listenzero{
+  display: flex;
+}
+
+.clear-btns{
+  background-color:rgb(0, 187, 255);
+  width: 130px;
+  height: 50px;
+}
+.btn-m{
+  height: 50px;
+  height: 50px;
+}
+#displayTime{
+  font-size: 50px;
+  margin-top: 170px;
+  margin-left: 30px;
+}
+.button--manger{
+  margin-left: 50px;
+}
+* {margin: 0; padding: 0;}
+
+* {margin: 0; padding: 0;}
+
+.content {
+  margin-top: 40px;
+    /* display: flex; */
+    /* margin: 100px 50px 50px 50px; */
+    font-family: sans-serif;
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+}
+
+#area {
+  margin-top: 30px;
+    width: 152px;
+    border: 1px solid #000;
+    /* margin: 0 auto; */
+    font-size: 0;
+    margin-bottom: 30px;
+   
+}
+
+.cell {
+  background-color: rgba(32, 33, 34, 0.573);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    border: 1px solid #000;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background .1s;
+}
+
+.cell:hover {
+    background-color: #F1F1F1;
+}
+
+.currentPlayer {
+    width: 140px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.stat table {
+    border-collapse: collapse;
+}
+
+.stat table, .stat th, .stat td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+}

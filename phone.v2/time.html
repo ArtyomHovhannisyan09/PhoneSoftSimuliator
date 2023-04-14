@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="phone">
+
+        <div class="time-bar">
+            <div class="cholka--iphone--mem"> </div>
+
+            <h1 id="displayTime">00:00:00</h1><br>
+            <div class="button--manger">
+                <img src="img/1486348535-music-square-stop-play-pause_80450.png" alt="Pous" class="btn-m" onclick="watchStop()">
+                <img src="img/Start_37108.png" alt="Start" class="btn-m" onclick="watchStart()">
+                <img src="img/restart_icon_227406.png" alt="restar" class="btn-m" onclick="wathcReset()">
+            </div>
+
+
+        </div>
+
+
+
+        <div class="home-button--bar">
+            <a href="/" style="color: aliceblue;"><img src="img/btn.png" alt="btn" class="btnGl"></a>
+
+        </div>
+        <script>
+            let [sceonds, minuts, hours] = [0, 0, 0];
+            let displayTime = document.getElementById('displayTime')
+            let timer = null
+
+            function stopwatch() {
+                sceonds++
+                if (sceonds == 60) {
+                    sceonds = 0
+                    minuts++
+                    if (minuts == 0) {
+                        hours++
+
+                    }
+                }
+                let h = hours < 10 ? "0" + hours : hours;
+                let m = hours < 10 ? "0" + minuts : minuts;
+                let s = hours < 10 ? "0" + sceonds : sceonds;
+                displayTime.innerHTML = h + ":" + m + ":" + s
+
+            }
+            function watchStart() {
+                if (timer == null) {
+                    setInterval(timer, 1000)
+
+                }
+                timer = setInterval(stopwatch, 1000)
+
+            }
+            function watchStop() {
+                clearInterval(timer)
+            }
+            function wathcReset(){
+                clearInterval(timer) 
+                // [sceonds, minuts, hours] = [0, 0, 0];
+                sceonds =0
+                minuts =0
+                hours=0
+                displayTime.innerHTML="00:00:00"
+            }
+        </script>
+</body>
+
+</html>
