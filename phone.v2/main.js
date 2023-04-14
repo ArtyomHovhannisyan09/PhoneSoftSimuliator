@@ -34,7 +34,7 @@ function cellClick() {
     if(!this.innerHTML) {
         this.innerHTML = player;
     }else {
-        alert("Ячейка занята");
+        alert("not found");
         return;
     }
 
@@ -46,7 +46,7 @@ function cellClick() {
 
     if(checkWin(data)) {
         stat[player] += 1;
-        restart("Выграл: " + player);
+        restart("Win: " + player);
     }else {
         var draw = true;
         for(var i in cell) {
@@ -54,7 +54,7 @@ function cellClick() {
         }
         if(draw) {
             stat.d += 1;
-            restart("Ничья");
+            restart("Tie");
         }
     }
 
